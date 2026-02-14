@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css2?family=poppins);
+/* main.css */
+
+/* reset */
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+/* Global Color */
+:root{
+    --primary-color:hsl(221, 83%, 53%);
+    --bg-color:#f4f6f9;
+    --text-color:#111827;
+    --border-color:#d1d5db;
+    --hover-color:hsl(221, 83%, 63%);
+}
+
+html{ font-size: 16px;}

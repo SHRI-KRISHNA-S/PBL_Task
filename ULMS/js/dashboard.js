@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         sidebar.classList.remove("active");
     });
 
-    
 });
 
 const dashboardData=[
@@ -36,4 +35,4 @@ dashboardData.forEach(item => {
         `;
 
     cardsContainer.appendChild(card);
-})
+});

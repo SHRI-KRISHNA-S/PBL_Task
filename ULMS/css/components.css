@@ -43,13 +43,18 @@
     font-size: 13px;
 }
 
+body.dark .card{
+    background: #1f2937;
+    color: white;
+}
+
 /* sidebar */
 
 .sidebar{
     width: 220px;
     height: 100vh;
-    background: #1f2937;
-    color: white;
+    background: #e9ebfb;
+    color: rgb(0, 0, 0);
     position: fixed;
     left: -220px;
     transition: left 0.3s ease;
@@ -60,6 +65,9 @@
 }
 
 #menuBtn{
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
     background: none;
     border: none;
     font-size: 22px;
@@ -67,13 +75,18 @@
     cursor: pointer;
 }
 
+#menuBtn:hover{
+    background-color: #c0d7f9;
+}
+
 #navbar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 65px;
     padding: 5px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 5px black;
 }
 
@@ -83,12 +96,20 @@
     margin: 5px;
     font-weight: bold;
     border-radius: 15px;
-    
+    cursor: pointer;
+}
+.sidebar-item.active{
+    background: #2563eb;
+    color:white;
 }
 .sidebar-item:hover{
-    background-color: #3f5677;
+    background-color: #c0d7f9;
 }
 
+body.dark #navbar {
+    background: #384c6e;
+    color: white;
+}
 a{
     text-decoration: none;
     all:unset;
@@ -113,9 +134,6 @@ a{
 
 /* CoursesList */
 
-#CT{
-    margin: 10px 20px;
-}
 
 .course-container{
     display: grid;
@@ -147,4 +165,54 @@ a{
 .status.completed{
     background: #e5e7eb;
     color: #374151;
+}
+
+/* assignmentblock */
+
+.assignment-card{
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.assignment-card button{
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.status.pending { color: orange;}
+.status.submitted { color: green;}
+.status.late { color: red;}
+
+/* profilecard */
+
+.profile-card{
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.profile-card input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.profile-card button{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+h2{
+    margin: 15px 20px;
+}
+
+#dashbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

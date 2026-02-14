@@ -20,3 +20,17 @@
 }
 
 html{ font-size: 16px;}
+
+/* profile */
+
+body.dark{
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark .profile-card,
+body.dark .course-card,
+body.dark .assignment-card{
+    background: #1f2937;
+    color: white;
+}

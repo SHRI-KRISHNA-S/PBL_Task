@@ -1,9 +1,9 @@
 @import url('./main.css');
 
 .login-card{
-    background: white;
+    background: rgb(54, 56, 84);
     width: 320px;
-    padding: 24px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -11,7 +11,7 @@
 .login-card h2{
     text-align: center;
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: rgb(233, 226, 255);
 }
 
 .login-card input{
@@ -25,8 +25,9 @@
 
 .login-card button{
     width: 100%;
+    margin-top: 15px;
     padding: 10px;
-    background-color: var(--primary-color);
+    background-color: rgb(26, 12, 59);
     color: white;
     border: none;
     border-radius: 4px;
@@ -34,7 +35,7 @@
 }
 
 .login-card button:hover{
-    background-color: var(--hover-color);
+    background-color: rgb(43, 43, 90);
 }
 
 #errorMsg{
@@ -106,10 +107,6 @@ body.dark .card{
     background-color: #c0d7f9;
 }
 
-body.dark #navbar {
-    background: #384c6e;
-    color: white;
-}
 a{
     text-decoration: none;
     all:unset;
@@ -129,7 +126,7 @@ a{
     background: white;
     padding: 16px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.1);
 }
 
 /* CoursesList */
@@ -169,7 +166,17 @@ a{
 
 /* assignmentblock */
 
+.assignment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .assignment-card{
+    margin: 40px 0px 0px 0px;
+    min-width: 300px;
+    max-width: 500px;
     background: white;
     padding: 16px;
     border-radius: 8px;

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=poppins);
+@import url(https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap);
 /* main.css */
 
 /* reset */
@@ -7,7 +7,7 @@
     margin : 0;
     padding : 0;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family:SN Pro;
 }
 
 /* Global Color */
@@ -33,4 +33,40 @@ body.dark .course-card,
 body.dark .assignment-card{
     background: #1f2937;
     color: white;
+}
+
+body.dark #menuBtn{
+    color: white;
+}
+
+body.dark #menuBtn:hover{
+    background-color: #0d2548;
+}
+
+body.dark .sidebar-item:hover{
+    background-color: #253c5e;
+}
+
+body.dark .sidebar-item.active{
+    background: #1f3565;
+    color:white;
+}
+
+body.dark #navbar {
+    background: #384c6e;
+    color: white;
+}
+
+body.dark .sidebar{
+    background: #1d1937;
+    color: rgb(255, 255, 255);
+}
+
+body.dark #themeToggle{
+    background-color: #384c6e;
+}
+
+body.dark .card{
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgb(14, 4, 29);
 }

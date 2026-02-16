@@ -18,19 +18,3 @@ dashboardData.forEach(item => {
 
     cardsContainer.appendChild(card);
 });
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const currentPage = window.location.pathname.split("/").pop();
-    const menuItem = document.querySelectorAll(".sidebar-container li");
-
-    menuItem.forEach(item => {
-        if(item.dataset.page === currentPage) {
-            item.classList.add("active");
-        }
-
-        item.addEventListener("click", () => {
-            window.location.href = item.dataset.page;
-        });
-    });
-});

@@ -1,21 +1,3 @@
-document.addEventListener("DOMContentLoaded", () =>{
-    const menuBtn = document.getElementById("menuBtn");
-    const sidebar = document.getElementById("sidebar");
-
-    menuBtn.addEventListener("click", (e)=> {
-        e.stopPropagation();
-        sidebar.classList.toggle("active");
-        
-    });
-     sidebar.addEventListener("click", (e) => {
-    e.stopPropagation();
-    });
-    document.addEventListener("click", () =>{
-        sidebar.classList.remove("active");
-    });
-
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
@@ -31,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         editBtn.textContent = isEditMode ? "Save Profile" : "Edit Profile";
 
-        if (!iseditMode){
+        if (!isEditMode){
             alert("Profile update successfully!");
         }
     });
